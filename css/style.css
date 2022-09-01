@@ -6,10 +6,222 @@
     font-family: open sans-serif;
     box-sizing: border-box;
 }
+
+/* logo */
+.logo{
+    width: 90px;
+    height: 90px;
+    content: icon;
+    margin-left: 20px;
+}
+
+.buscador{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #ffc0cb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: #242424;
+    box-shadow: 0px 2px 5px grey;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: rgb(224, 66, 93);
+}
+/* carrusel */
+
+.slider {
+    width: 75vw;
+    height: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    margin-left: 130px;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 10);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 5));
+        transform: translateX(calc(-200px * 5));
+    }
+}
+/* Practicas y Tratamientos */
+.foto-presentacion {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-position: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.container-practicas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.practicas{
+    width: 340px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.practicas p{
+    margin-top: 20px;
+}
+
+.boton-mas-info{
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 26px;
+    height: 60px;
+    width: 30%;
+    margin-left: 110px;
+    text-decoration: none;
+    background-color: rgb(224, 66, 93);
+}
+
+/* Falsa publicidad */
+.falso {
+    color: white;
+    background-color: black;
+    padding: 50px;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.publicidad {
+    margin-left: center;
+    margin-right: 370px;
+
+}
+
+.p {
+    margin-bottom: 50px;
+    margin-left: center;
+}
+
+/* Encuesta y boton formulario */
+
+.form {
+    width: 50%;
+    border: 2px solid #ccc;
+    margin: 70px;
+    padding: 100px;
+    margin-left: 330px;
+
+}
+
+label{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+}
+
+.inputs, textarea{
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #0a1a2a;
+}
+
+.inputs:focus, textarea:focus{
+    border: 1px solid #1668C4;
+
+}
+
+.inputs[type="submit"] {
+    margin-bottom: 0;
+    background: #1668C4;
+    color: #fff;
+    border: none;
+    margin-bottom: 20px;
+    
+}
+
+.inputs[type="submit"]:hover {
+    background: #4a88f4;
+    cursor: pointer;
+}
+
 /* pie de pagina- footer */
-/* .pie-pagina{
+.pie-pagina{
 width: 100%;
-background-color: #0a141d;
+background-color: rgb(253, 151, 253);
 }
 .pie-pagina .grupo-1{
 width: 100%;
@@ -17,8 +229,8 @@ max-width: 1200px;
 margin: auto;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-grid-gap: 50px;
-padding: 45px 0px;
+grid-gap: 70px;
+padding: 50px 0px;
 }
 .pie-pagina .grupo-1 .box figure{
 width: 100%;
@@ -37,7 +249,7 @@ margin-bottom: 25px;
 font-size: 20px;
 }
 .pie-pagina .grupo-1 .box p{
-color: #efefef;
+color: black;
 margin-bottom: 10px;
 
 }
@@ -51,8 +263,37 @@ color: #fff;
 margin-right: 10px;
 background-color: #0d2033;
 text-align: center;
-transition: all 300ms ease;
 }
+
 .pie-pagina .grupo-2{
-background-color: #0a1a2a;
-padding:
+background-color: rgb(246, 54, 246);
+padding: 15px 10px;
+text-align: center;
+color: #fff;
+
+}
+.pie-pagina .grupo-1 .red-social img{
+    width: 20px;
+    height: 20px;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* Tratamientos faciales */
+.faciales{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.tamano{
+    height: 250px;
+    width: 250px;
+}
+
+h3{
+    color: red;
+    text-align: center;
+
+}

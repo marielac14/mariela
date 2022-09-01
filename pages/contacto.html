@@ -9,43 +9,64 @@
 </head>
 
 <body>
+     <!-- logo y buscador -->
+     <header>
+        <img src="../imagenes/logo.jpg" alt="logo fast beauty" class="logo">
+        <form action="" method="" enctype="">
+            <div class="buscador">
+                <label for="buscar"></label>
+                <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="buscador">
+                <input type="submit" value="Buscar" class="buscador">
+            </div> 
+        </form>
+        <!-- menu de navegacion -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./faciales.html">Faciales</a></li>
+                <li><a href="./corporales.html">Corporales</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div>
-        <img src="../imagenes/contacto.jpg" alt="contacto">
+        <img src="../imagenes/contacto.jpg" alt="contacto" class="faciales">
     </div>
      <!-- encuesta y boton- formulario -->
-
-   <p>
-    En Fast Beauty queremos asesorarte.
-    Contactanos
-</p>
-
-<form action="" method="" enctype="">
-    <div>
-        <label for="nombre"></label>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-
-        <label for="email"></label>
-        <input type="text" name="email" id="email" placeholder="Email">
-
-        <label for="telefono"></label>
-        <input type="text" name="telefono" id="telefono" placeholder="Telefono">
-
-        <label for="mensaje"></label>
-        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje">
-
-        <p> ¿Como te gustaria que te contactemos? </p>
-
-        <input type="radio" name="comunicacion" id="whatsapp" value="Whatsapp">
-        <label for="whatsapp">Whatsapp</label>
-
-        <input type="radio" name="comunicacion" id="mail" value="Mail">
-        <label for="mail">Mail</label>
-
-        <input type="submit" value="Enviar">
-        <input type="reset">
-    </div>
- </form>
- <div>
+     <h1>
+        En Fast Beauty queremos asesorarte.
+        Contactanos
+    </h1>
+    
+    <form class="form" action="" method="" enctype="">
+        <div class="encuesta">
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputs">
+    
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="Email" class="inputs">
+    
+            <label for="telefono"></label>
+            <input type="text" name="telefono" id="telefono" placeholder="Telefono" class="inputs">
+    
+            <label for="mensaje"></label>
+            <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje" class="inputs">
+    
+            <p> ¿Como te gustaria que te contactemos? </p>
+    
+            <input type="radio" name="comunicacion" id="whatsapp" value="Whatsapp" class="inputs">
+            <label for="whatsapp">Whatsapp</label>
+    
+            <input type="radio" name="comunicacion" id="mail" value="Mail" class="inputs">
+            <label for="mail">Mail</label>
+    
+            <input type="submit" value="Enviar" class="inputs">
+            <input type="submit" value="Restablecer" class="inputs">
+        </div>
+     </form>
+ <div class="maps">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.443340911208!2d-58.39299478495399!3d-34.61823516577307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadf10660b99%3A0xcfe28405820df5c4!2sAv.%20Independencia%201738%2C%20C1100%20ABR%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661984393521!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  </div>
     <!-- footer -->
@@ -55,7 +76,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="../imagenes/logo.jpg" alt="logo">
+                        <img src="../imagenes/logo.jpg" alt="logo" class="logo">
                     </a>
                 </figure>
             </div>
@@ -66,11 +87,22 @@
             <div class="box">
                 <h2> SEGUINOS </h2>
                 <div class="red-social">
-                    <a href="#" class="whatsapp"></a> <img src="../imagenes/whatsapp.png" alt="whatsapp">
-                    <a href="#" class="ubicacion"></a> <img src="../imagenes/ubicacion.png" alt="ubicacion">
-                    <a href="#" class="mail"></a> <img src="../imagenes/email.png" alt="mail">
+                    <div>
+                        <img src="../imagenes/whatsapp.png" alt="whatsapp">
+                        <span>1158383455</span> 
+                    </div>
+                    <div>
+                        <img src="../imagenes/ubicacion.png" alt="ubicacion">
+                        <span> Av independencia 1738</span>
+                     </div>
+                     <div>
+                         <img src="../imagenes/email.png" alt="mail">
+                         <span>marfastbeauty1@hotmail.com</span>
+    
+                     </div>
     
                 </div>
+                
             </div>
     
         </div>
@@ -79,7 +111,7 @@
     
         </div>
     
-     </footer>   
+     </footer>  
     
 
 
