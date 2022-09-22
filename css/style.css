@@ -53,6 +53,7 @@ li a{
 li a:hover{
     background-color: rgb(224, 66, 93);
 }
+
 /* carrusel */
 
 .slider {
@@ -356,3 +357,4 @@ section{
     list-style-type: circle;
     
 }
+

@@ -6,35 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Beauty</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
 <body>
-      <!-- logo y buscador -->
-      <header>
-        <img src="../imagenes/logo.jpg" alt="logo fast beauty" class="logo">
-        <form action="" method="" enctype="">
-            <div class="buscador">
-                <label for="buscar"></label>
-                <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="buscador">
-                <input type="submit" value="Buscar" class="buscador">
-            </div> 
-        </form>
-        <!-- menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./faciales.html">Faciales</a></li>
-                <li><a href="./corporales.html">Corporales</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> Fast Beauty </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotras</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tratamientos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../pages/faciales.html">Faciales</a></li>
+                    <li><a class="dropdown-item" href="../pages/corporales.html">Corporales</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
         </nav>
-    </header>
 
-    <div class="nosotras">
-        <img src="../imagenes/nosotras.png" alt="nosotras" class="
-        faciales">
-    </div>
+        <!-- carousel bootstrap -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imagenes/boots.jpg" class="d-block w-100" alt="emtone">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/boots2.webp" class="d-block w-100" alt="meso">
+              </div>
+              <div class="carousel-item">
+                <img src="../imagenes/boots3.jpg" class="d-block w-100" alt="dermo">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
     <h1> Dr. Mariela Giselle Cabral </h1>
     <h3>Te ofrecemos una gran variedad de tratamientos para tu cuerpo y el cuidado de tu piel.</h3>
 
@@ -60,50 +114,14 @@
     </section>
 
 
-    <!-- footer -->
 
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="#">
-                        <img src="../imagenes/logo.jpg" alt="logo" class="logo">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Te ofrecemos una gran variedad de tratamientos para tu cuerpo y el cuidado de tu piel. Empresa #1 elegida por mujeres, hecho por mujeres.</p>
-            </div>
-            <div class="box">
-                <h2> SEGUINOS </h2>
-                <div class="red-social">
-                    <div>
-                        <img src="../imagenes/whatsapp.png" alt="whatsapp">
-                        <span>1158383455</span> 
-                    </div>
-                    <div>
-                        <img src="../imagenes/ubicacion.png" alt="ubicacion">
-                        <span> Av independencia 1738</span>
-                     </div>
-                     <div>
-                         <img src="../imagenes/email.png" alt="mail">
-                         <span>marfastbeauty1@hotmail.com</span>
-    
-                     </div>
-    
-                </div>
-                
-            </div>
-    
-        </div>
-        <div class="grupo-2">
-            <small>&COPY; 2022 <b> Fast Beauty </b> -Todos los Derechos Reservados </small>
-    
-        </div>
-    
-     </footer> 
+     <!-- footer bootstrap-->
 
+     <div class="container-fluid bg-info text-center p-3 mt-3">
+        <small>&COPY; 2022 <b> Fast Beauty </b> -Todos los Derechos Reservados </small>
+      </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 
 
