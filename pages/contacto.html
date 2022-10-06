@@ -10,46 +10,32 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"> Fast Beauty </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../pages/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/nosotros.html">Nosotras</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tratamientos
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../pages/faciales.html">Faciales</a></li>
-                    <li><a class="dropdown-item" href="../pages/corporales.html">Corporales</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
+   <!-- logo y buscador -->
+   <header>
+    <img src="../imagenes/logo.jpg" alt="logo fast beauty" class="logo">
+    <form action="" method="" enctype="">
+        <div class="buscador">
+            <label for="buscar"></label>
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar" class="buscador">
+            <input type="submit" value="Buscar" class="buscador">
+        </div> 
+    </form>
+    <!-- menu de navegacion -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./faciales.html">Faciales</a></li>
+            <li><a href="./corporales.html">Corporales</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
 
-        <div class="texts">
-            <h2 class="nameAnima"> En Fast Beauty queremos asesorarte </h2>
-            <h2 class="contacoAnima">Contactanos</h2>
+        <div>
+            <h2> En Fast Beauty queremos asesorarte </h2>
+            <h2>Contactanos</h2>
         </div>
 
         <!-- formulario bootstrap -->
@@ -95,11 +81,48 @@
  <div class="maps">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.443340911208!2d-58.39299478495399!3d-34.61823516577307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadf10660b99%3A0xcfe28405820df5c4!2sAv.%20Independencia%201738%2C%20C1100%20ABR%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1661984393521!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
  </div>
-    <!-- footer -->
-
-    <div class="container-fluid bg-danger text-center p-3 mt-3">
-        <small>&COPY; 2022 <b> Fast Beauty </b> -Todos los Derechos Reservados </small>
+    
+ <footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="../imagenes/logo.jpg" alt="logo" class="logo">
+              </a>
+          </figure>
       </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Te ofrecemos una gran variedad de tratamientos para tu cuerpo y el cuidado de tu piel. Empresa #1 elegida por mujeres, hecho por mujeres.</p>
+      </div>
+      <div class="box">
+          <h2> SEGUINOS </h2>
+          <div class="red-social">
+              <div>
+                  <img src="../imagenes/whatsapp.png" alt="whatsapp">
+                  <span>1158383455</span> 
+              </div>
+              <div>
+                  <img src="../imagenes/ubicacion.png" alt="ubicacion">
+                  <span> Av independencia 1738</span>
+               </div>
+               <div>
+                   <img src="../imagenes/email.png" alt="mail">
+                   <span>marfastbeauty1@hotmail.com</span>
+
+               </div>
+
+          </div>
+          
+      </div>
+
+  </div>
+  <div class="grupo-2">
+      <small>&COPY; 2022 <b> Fast Beauty </b> -Todos los Derechos Reservados </small>
+
+  </div>
+
+</footer>
 
     
 
